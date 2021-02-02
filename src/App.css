@@ -1,0 +1,35 @@
+.app-wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header"
+ "nav content content";
+  -ms-grid-rows: 60px 1fr;
+      grid-template-rows: 60px 1fr;
+  -ms-grid-columns: 2fr 10fr;
+      grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+}
+
+.app-wrapper .header {
+  background-color: lightsalmon;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+.app-wrapper .sidebar {
+  background-color: #76bb08;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+.app-wrapper .content {
+  background-color: #5fafd4;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: content;
+}
+/*# sourceMappingURL=App.css.map */
